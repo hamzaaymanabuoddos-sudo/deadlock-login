@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Deadlock-inspired gaming login interface"
+    >
+
+    <title>Deadlock | Login</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+    <!-- Atmospheric UI -->
+    <div class="hud hud--top-left">
+        <span>SYS_01</span>
+        <span>AUTH</span>
+    </div>
+
+    <div class="hud hud--top-right">
+        <span>SECURE</span>
+        <span>NODE_07</span>
+    </div>
+
+    <div class="hud hud--bottom-left">
+        <span>NETWORK</span>
+        <span>STABLE</span>
+    </div>
+
+    <div class="hud hud--bottom-right">
+        <span>ACCESS</span>
+        <span>AUTHORIZED</span>
+    </div>
+
+    <div class="scan-line"></div>
+
+    <!-- Background -->
+    <div class="login-page__background"></div>
+    <div class="login-page__overlay"></div>
+    
+    <div class="environment">
+             <div class="environment__ring environment__ring--one"></div>
+             <div class="environment__ring environment__ring--two"></div>
+             <div class="environment__line environment__line--one"></div>
+            <div class="environment__line environment__line--two"></div>
+     </div>
+
+    <!-- Main Content -->
+    <section class="login">
+
+        <!-- Brand -->
+        <header class="login__header">
+
+            <div class="brand">
+                <div class="brand__mark">
+                <span>D</span>
+            </div>
+
+                <div class="brand__text">
+                    <span class="brand__title">DEADLOCK</span>
+                    <span class="brand__subtitle">SECURE ACCESS</span>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Login Card -->
+        <div class="login-card">
+            <div class="login-card__decoration">
+    <span class="decoration-line"></span>
+    <span class="decoration-dot"></span>
+    <span class="decoration-line"></span>
+          </div>
+
+            <div class="login-card__header">
+
+                <span class="login-card__eyebrow">
+                    SYSTEM ACCESS
+                </span>
+
+                <h1 class="login-card__title">
+                    Welcome Back
+                </h1>
+
+                <p class="login-card__description">
+                    Enter your credentials to continue.
+                </p>
+
+            </div>
+
+            <form class="login-form" id="login-form">
+
+                <div class="form-field">
+
+                    <label
+                        class="form-field__label"
+                        for="email"
+                    >
+                        Email
+                    </label>
+
+                    <input
+                        class="form-field__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-field">
+
+                    <div class="form-field__top">
+
+                        <label
+                            class="form-field__label"
+                            for="password"
+                        >
+                            Password
+                        </label>
+
+                        <a
+                            href="#"
+                            class="form-field__link"
+                        >
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <input
+                        class="form-field__input"
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+                <div class="login-form__options">
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+
+                        <span class="checkbox__box"></span>
+
+                        <span class="checkbox__label">
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+                <button
+                    class="button button--primary"
+                    type="submit"
+                    id="login-button"
+                >
+                    <span class="button__text">
+                        Enter System
+                    </span>
+
+                    <span class="button__arrow">
+                        →
+                    </span>
+                </button>
+
+                <p
+                    class="login-form__message"
+                    id="login-message"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <div class="login-card__footer">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="#" class="login-card__register">
+                    Create account
+                </a>
+
+            </div>
+
+        </div>
+
+        <footer class="login__footer">
+
+            <span>
+                SYSTEM // ONLINE
+            </span>
+
+            <span>
+                v1.0.0
+            </span>
+
+        </footer>
+
+    </section>
+
+</main>>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
